@@ -31,6 +31,6 @@
 	return bLocalShow;
 end</Script>
     <RegisterScript>false</RegisterScript>
-    <Encoding />
+    <Encoding>UTF-8</Encoding>
   </Scripts>
 </DocumentElement>

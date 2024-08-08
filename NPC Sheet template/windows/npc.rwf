@@ -2,7 +2,7 @@
   <WindowControls>
     <WindowName>npc</WindowName>
     <ControlName>contentframe</ControlName>
-    <ZIndex>12</ZIndex>
+    <ZIndex>3</ZIndex>
     <ControlClass>FGIconControl</ControlClass>
     <Definition>{"ArrayOfFGControlPropertyInfo":{"@xmlns:xsd":"http://www.w3.org/2001/XMLSchema","@xmlns:xsi":"http://www.w3.org/2001/XMLSchema-instance","FGControlPropertyInfo":[
       {"Name":"AdvancedAnchoring","Value":{"@xsi:type":"ArrayOfAdvancedAnchor"}},
@@ -165,7 +165,7 @@
   <WindowControls>
     <WindowName>npc</WindowName>
     <ControlName>main</ControlName>
-    <ZIndex>17</ZIndex>
+    <ZIndex>6</ZIndex>
     <ControlClass>FGSubWindow</ControlClass>
     <Definition>{"ArrayOfFGControlPropertyInfo":{"@xmlns:xsd":"http://www.w3.org/2001/XMLSchema","@xmlns:xsi":"http://www.w3.org/2001/XMLSchema-instance","FGControlPropertyInfo":[
       {"Name":"Activate"},
@@ -220,150 +220,8 @@
   </WindowControls>
   <WindowControls>
     <WindowName>npc</WindowName>
-    <ControlName>name</ControlName>
-    <ZIndex>22</ZIndex>
-    <ControlClass>FGStringField</ControlClass>
-    <Definition>{"ArrayOfFGControlPropertyInfo":{"@xmlns:xsd":"http://www.w3.org/2001/XMLSchema","@xmlns:xsi":"http://www.w3.org/2001/XMLSchema-instance","FGControlPropertyInfo":[
-      {"Name":"AdvancedAnchoring","Value":{"@xsi:type":"ArrayOfAdvancedAnchor"}},
-      {"Name":"AdvancedTemplate","Value":{"@xsi:type":"xsd:string"}},
-      {"Name":"BackgroundColor","Value":{"@xsi:type":"xsd:string","#text":"0;0;0;0"}},
-      {"Name":"Center"},
-      {"Name":"ControlName","Value":{"@xsi:type":"xsd:string","#text":"name"}},
-      {"Name":"CustomAnchoring","Value":{"@xsi:type":"ArrayOfAnchorDefinition"}},
-      {"Name":"CustomProperties","Value":{"@xsi:type":"ArrayOfCustomProperty"}},
-      {"Name":"DefaultText","Value":{"@xsi:type":"xsd:string"}},
-      {"Name":"DelayKeyUpdate","Value":{"@xsi:type":"xsd:boolean","#text":"false"}},
-      {"Name":"DesignerHeight","Value":{"@xsi:type":"xsd:int","#text":"21"}},
-      {"Name":"DesignerLocked","Value":{"@xsi:type":"xsd:boolean","#text":"false"}},
-      {"Name":"DesignerWidth","Value":{"@xsi:type":"xsd:int","#text":"137"}},
-      {"Name":"DevelopmentComments"},
-      {"Name":"DiceRoll","Value":{"@xsi:type":"PropertyDiceRoll","UseModStack":{"@xsi:nil":"true"},"ResetModStack":{"@xsi:nil":"true"},"SecretRoll":{"@xsi:nil":"true"},"AllowDragDrop":{"@xsi:nil":"true"},"AdditionalInfo":null}},
-      {"Name":"Disabled"},
-      {"Name":"DynamicSize"},
-      {"Name":"EmptyText"},
-      {"Name":"FontColor","Value":{"@xsi:type":"xsd:string","#text":"0;0;0;0"}},
-      {"Name":"FontName","Value":{"@xsi:type":"xsd:string"}},
-      {"Name":"FrameHideReadonly"},
-      {"Name":"FrameName","Value":{"@xsi:type":"xsd:string"}},
-      {"Name":"FrameOffset","Value":{"@xsi:type":"xsd:string","#text":"15,10,15,10"}},
-      {"Name":"GMEditOnly"},
-      {"Name":"GMVisibleOnly"},
-      {"Name":"HorizontalAnchor","Value":{"@xsi:type":"xsd:int","#text":"2"}},
-      {"Name":"HoverCursor"},
-      {"Name":"InheritSizePosition"},
-      {"Name":"InsertBefore"},
-      {"Name":"Invisible","Value":{"@xsi:type":"xsd:boolean","#text":"true"}},
-      {"Name":"LineOffset"},
-      {"Name":"MaximumHeight"},
-      {"Name":"MaximumWidth"},
-      {"Name":"Merge"},
-      {"Name":"MinimumHeight"},
-      {"Name":"MinimumWidth"},
-      {"Name":"MultilineSpacing"},
-      {"Name":"NextTabTarget"},
-      {"Name":"NoDrag","Value":{"@xsi:type":"xsd:boolean","#text":"false"}},
-      {"Name":"NoDragselect","Value":{"@xsi:type":"xsd:boolean","#text":"false"}},
-      {"Name":"NoDrop","Value":{"@xsi:type":"xsd:boolean","#text":"false"}},
-      {"Name":"PrevTabTarget"},
-      {"Name":"ReadOnly"},
-      {"Name":"RelativeMargin"},
-      {"Name":"RelativeStacking"},
-      {"Name":"ScriptFile"},
-      {"Name":"Source"},
-      {"Name":"StackVertWith"},
-      {"Name":"StateFrames","Value":{"@xsi:type":"ArrayOfStateFrame"}},
-      {"Name":"Tooltip"},
-      {"Name":"UseAsTemplate","Value":{"@xsi:type":"xsd:string"}},
-      {"Name":"VerticalAnchor","Value":{"@xsi:type":"xsd:int","#text":"0"}},
-      {"Name":"XPos","Value":{"@xsi:type":"xsd:int","#text":"547"}},
-      {"Name":"YPos","Value":{"@xsi:type":"xsd:int","#text":"10"}}
-]}}</Definition>
-    <LUACode>function onValueChanged()
-	if window.onNameUpdated then
-		window.onNameUpdated();
-	end
-	if window.parentcontrol and window.parentcontrol.window.onNameUpdated then
-		window.parentcontrol.window.onNameUpdated();
-	end
-end</LUACode>
-    <GroupIndex>0</GroupIndex>
-    <Template />
-  </WindowControls>
-  <WindowControls>
-    <WindowName>npc</WindowName>
-    <ControlName>nonid_name</ControlName>
-    <ZIndex>23</ZIndex>
-    <ControlClass>FGStringField</ControlClass>
-    <Definition>{"ArrayOfFGControlPropertyInfo":{"@xmlns:xsd":"http://www.w3.org/2001/XMLSchema","@xmlns:xsi":"http://www.w3.org/2001/XMLSchema-instance","FGControlPropertyInfo":[
-      {"Name":"AdvancedAnchoring","Value":{"@xsi:type":"ArrayOfAdvancedAnchor"}},
-      {"Name":"AdvancedTemplate","Value":{"@xsi:type":"xsd:string"}},
-      {"Name":"BackgroundColor","Value":{"@xsi:type":"xsd:string","#text":"0;0;0;0"}},
-      {"Name":"Center"},
-      {"Name":"ControlName","Value":{"@xsi:type":"xsd:string","#text":"nonid_name"}},
-      {"Name":"CustomAnchoring","Value":{"@xsi:type":"ArrayOfAnchorDefinition"}},
-      {"Name":"CustomProperties","Value":{"@xsi:type":"ArrayOfCustomProperty"}},
-      {"Name":"DefaultText","Value":{"@xsi:type":"xsd:string"}},
-      {"Name":"DelayKeyUpdate","Value":{"@xsi:type":"xsd:boolean","#text":"false"}},
-      {"Name":"DesignerHeight","Value":{"@xsi:type":"xsd:int","#text":"20"}},
-      {"Name":"DesignerLocked","Value":{"@xsi:type":"xsd:boolean","#text":"false"}},
-      {"Name":"DesignerWidth","Value":{"@xsi:type":"xsd:int","#text":"134"}},
-      {"Name":"DevelopmentComments"},
-      {"Name":"DiceRoll","Value":{"@xsi:type":"PropertyDiceRoll","UseModStack":{"@xsi:nil":"true"},"ResetModStack":{"@xsi:nil":"true"},"SecretRoll":{"@xsi:nil":"true"},"AllowDragDrop":{"@xsi:nil":"true"},"AdditionalInfo":null}},
-      {"Name":"Disabled"},
-      {"Name":"DynamicSize"},
-      {"Name":"EmptyText"},
-      {"Name":"FontColor","Value":{"@xsi:type":"xsd:string","#text":"0;0;0;0"}},
-      {"Name":"FontName","Value":{"@xsi:type":"xsd:string"}},
-      {"Name":"FrameHideReadonly"},
-      {"Name":"FrameName","Value":{"@xsi:type":"xsd:string"}},
-      {"Name":"FrameOffset","Value":{"@xsi:type":"xsd:string","#text":"15,10,15,10"}},
-      {"Name":"GMEditOnly"},
-      {"Name":"GMVisibleOnly"},
-      {"Name":"HorizontalAnchor","Value":{"@xsi:type":"xsd:int","#text":"2"}},
-      {"Name":"HoverCursor"},
-      {"Name":"InheritSizePosition"},
-      {"Name":"InsertBefore"},
-      {"Name":"Invisible","Value":{"@xsi:type":"xsd:boolean","#text":"true"}},
-      {"Name":"LineOffset"},
-      {"Name":"MaximumHeight"},
-      {"Name":"MaximumWidth"},
-      {"Name":"Merge"},
-      {"Name":"MinimumHeight"},
-      {"Name":"MinimumWidth"},
-      {"Name":"MultilineSpacing"},
-      {"Name":"NextTabTarget"},
-      {"Name":"NoDrag","Value":{"@xsi:type":"xsd:boolean","#text":"false"}},
-      {"Name":"NoDragselect","Value":{"@xsi:type":"xsd:boolean","#text":"false"}},
-      {"Name":"NoDrop","Value":{"@xsi:type":"xsd:boolean","#text":"false"}},
-      {"Name":"PrevTabTarget"},
-      {"Name":"ReadOnly"},
-      {"Name":"RelativeMargin"},
-      {"Name":"RelativeStacking"},
-      {"Name":"ScriptFile"},
-      {"Name":"Source"},
-      {"Name":"StackVertWith"},
-      {"Name":"StateFrames","Value":{"@xsi:type":"ArrayOfStateFrame"}},
-      {"Name":"Tooltip"},
-      {"Name":"UseAsTemplate","Value":{"@xsi:type":"xsd:string"}},
-      {"Name":"VerticalAnchor","Value":{"@xsi:type":"xsd:int","#text":"0"}},
-      {"Name":"XPos","Value":{"@xsi:type":"xsd:int","#text":"550"}},
-      {"Name":"YPos","Value":{"@xsi:type":"xsd:int","#text":"40"}}
-]}}</Definition>
-    <LUACode>function onValueChanged()
-	if window.onNameUpdated then
-		window.onNameUpdated();
-	end
-	if window.parentcontrol and window.parentcontrol.window.onNameUpdated then
-		window.parentcontrol.window.onNameUpdated();
-	end
-end</LUACode>
-    <GroupIndex>0</GroupIndex>
-    <Template />
-  </WindowControls>
-  <WindowControls>
-    <WindowName>npc</WindowName>
     <ControlName>notes</ControlName>
-    <ZIndex>16</ZIndex>
+    <ZIndex>5</ZIndex>
     <ControlClass>FGFormattedText</ControlClass>
     <Definition>{"ArrayOfFGControlPropertyInfo":{"@xmlns:xsd":"http://www.w3.org/2001/XMLSchema","@xmlns:xsi":"http://www.w3.org/2001/XMLSchema-instance","FGControlPropertyInfo":[
       {"Name":"AdvancedAnchoring","Value":{"@xsi:type":"ArrayOfAdvancedAnchor"}},
@@ -467,115 +325,41 @@ end</LUACode>
       {"Name":"XPos","Value":{"@xsi:type":"xsd:int","#text":"0"}},
       {"Name":"YPos","Value":{"@xsi:type":"xsd:int","#text":"0"}}
 ]}}</Definition>
-    <LUACode>function onInit()
+    <LUACode>function onLockChanged()
 	self.onStateChanged();
-	self.onIDChanged();
-	self.initRecordType();
-	self.update();
 end
-
-function onLockChanged()
+function onIDChanged()
+	WindowManager.updateTooltip(self);
 	self.onStateChanged();
+end
+function onNameUpdated()
+	WindowManager.updateTooltip(self);
 end
 
 function onStateChanged()
-	update();
-
-	if main.subwindow then
-		main.subwindow.update();
-	end
-
-	local bReadOnly = WindowManager.getReadOnlyState(getDatabaseNode());
-	notes.setReadOnly(bReadOnly);
-end
-
-function onIDChanged()
-	if Session.IsHost then
-		if main.subwindow then
-			main.subwindow.update();
-		end
-	else
-		local bID = LibraryData.getIDState("npc", getDatabaseNode(), true);
-		tabs.setVisibility(bID);
-	end
-end
-
-local _sRecordType;
-
-function initRecordType()
-	local sClass = UtilityManager.getTopWindow(self).getClass();
-	_sRecordType = LibraryData.getRecordTypeFromDisplayClass(sClass);
-
-	if link then
-		link.setValue(sClass);
-	end
-	name.setEmptyText(Interface.getString("library_recordtype_empty_" .. _sRecordType));
-	nonid_name.setEmptyText(Interface.getString("library_recordtype_empty_nonid_" .. _sRecordType));
-	if recordtype_label then
-		recordtype_label.setValue(LibraryData.getSingleDisplayText(_sRecordType));
-		recordtype_label.setVisible(true);
-	end
-end
-
-function update()
-	if not _sRecordType then
-		return;
-	end
-
-	local nodeRecord = getDatabaseNode();
-
-	-- Update name/token edit modes
-	local bReadOnly = WindowManager.getReadOnlyState(nodeRecord);
-	name.setReadOnly(bReadOnly);
-	nonid_name.setReadOnly(bReadOnly);
-	if token then
-		token.setReadOnly(bReadOnly);
-	end
-
-	-- Update name field visibility
-	local bID = LibraryData.getIDState(_sRecordType, nodeRecord);
-	name.setVisible(bID);
-	nonid_name.setVisible(not bID);
-
-	-- Update tooltip
-	local sTooltip;
-	if bID then
-		sTooltip = DB.getValue(nodeRecord, "name", "");
-		if sTooltip == "" then
-			sTooltip = Interface.getString("library_recordtype_empty_" .. _sRecordType);
-		end
-	else
-		sTooltip = DB.getValue(nodeRecord, "nonid_name", "");
-		if sTooltip == "" then
-			sTooltip = Interface.getString("library_recordtype_empty_nonid_" .. _sRecordType);
+	if header and header.subwindow then
+		if header.subwindow.update then
+			header.subwindow.update();
 		end
 	end
-	if parentcontrol then
-		parentcontrol.window.setTooltipText(sTooltip);
+	local tTabs = WindowTabManager.getTabsData(self);
+	for _,v in ipairs(tTabs) do
+		local c = self[v.sName];
+		if c and c.subwindow then
+			if c.subwindow.update then
+				c.subwindow.update();
+			end
+		end
 	end
-	if link then
-		link.setTooltipText(sTooltip);
-	end
 end
-
-function onIDChanged()
-	self.update();
-end
-function onNameUpdated()
-	self.update();
-end
-
--- Legacy compatibility
-function updateIDState()
-	self.update();
-end</LUACode>
+</LUACode>
     <GroupIndex>0</GroupIndex>
     <Template />
   </WindowControls>
   <WindowControls>
     <WindowName>npc</WindowName>
     <ControlName>pictures</ControlName>
-    <ZIndex>15</ZIndex>
+    <ZIndex>4</ZIndex>
     <ControlClass>FGSubWindow</ControlClass>
     <Definition>{"ArrayOfFGControlPropertyInfo":{"@xmlns:xsd":"http://www.w3.org/2001/XMLSchema","@xmlns:xsi":"http://www.w3.org/2001/XMLSchema-instance","FGControlPropertyInfo":[
       {"Name":"Activate"},
@@ -631,7 +415,7 @@ end</LUACode>
   <WindowControls>
     <WindowName>npc</WindowName>
     <ControlName>resize</ControlName>
-    <ZIndex>21</ZIndex>
+    <ZIndex>10</ZIndex>
     <ControlClass>FGIconControl</ControlClass>
     <Definition>{"ArrayOfFGControlPropertyInfo":{"@xmlns:xsd":"http://www.w3.org/2001/XMLSchema","@xmlns:xsi":"http://www.w3.org/2001/XMLSchema-instance","FGControlPropertyInfo":[
       {"Name":"AdvancedAnchoring","Value":{"@xsi:type":"ArrayOfAdvancedAnchor"}},
@@ -684,7 +468,7 @@ end</LUACode>
   <WindowControls>
     <WindowName>npc</WindowName>
     <ControlName>scrollbar_main</ControlName>
-    <ZIndex>18</ZIndex>
+    <ZIndex>7</ZIndex>
     <ControlClass>FGScrollBar</ControlClass>
     <Definition>{"ArrayOfFGControlPropertyInfo":{"@xmlns:xsd":"http://www.w3.org/2001/XMLSchema","@xmlns:xsi":"http://www.w3.org/2001/XMLSchema-instance","FGControlPropertyInfo":[
       {"Name":"AdvancedAnchoring","Value":{"@xsi:type":"ArrayOfAdvancedAnchor"}},
@@ -738,7 +522,7 @@ end</LUACode>
   <WindowControls>
     <WindowName>npc</WindowName>
     <ControlName>scrollbar_notes</ControlName>
-    <ZIndex>19</ZIndex>
+    <ZIndex>8</ZIndex>
     <ControlClass>FGScrollBar</ControlClass>
     <Definition>{"ArrayOfFGControlPropertyInfo":{"@xmlns:xsd":"http://www.w3.org/2001/XMLSchema","@xmlns:xsi":"http://www.w3.org/2001/XMLSchema-instance","FGControlPropertyInfo":[
       {"Name":"AdvancedAnchoring","Value":{"@xsi:type":"ArrayOfAdvancedAnchor"}},
@@ -792,7 +576,7 @@ end</LUACode>
   <WindowControls>
     <WindowName>npc</WindowName>
     <ControlName>tabs</ControlName>
-    <ZIndex>20</ZIndex>
+    <ZIndex>9</ZIndex>
     <ControlClass>FGVerticalTab</ControlClass>
     <Definition>{"ArrayOfFGControlPropertyInfo":{"@xmlns:xsd":"http://www.w3.org/2001/XMLSchema","@xmlns:xsi":"http://www.w3.org/2001/XMLSchema-instance","FGControlPropertyInfo":[
       {"Name":"AdvancedAnchoring","Value":{"@xsi:type":"ArrayOfAdvancedAnchor"}},
